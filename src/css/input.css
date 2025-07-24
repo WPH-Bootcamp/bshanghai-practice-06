@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+/* @plugin "@tailwindcss/forms"; */
+
+/* @layer utilities {
+  .rotate-15 {
+    transform: rotate(15deg);
+  }
+} */
+
+/* @utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+
+/* dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1ecbe1;
+  --color-secondary: #e1341e;
+  --image-hero: url('url to image');
+  --font-sans: 'Roboto', sans-serif;
+}
+
+/* import */
+/* @source '../css/' */
+@source './button.css';
+
+/* external plugin */
+@plugin "https://cdn.jsdelivr.net/npm/plugin-name@version/plugin.css";
